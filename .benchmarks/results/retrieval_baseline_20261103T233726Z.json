@@ -1,0 +1,2271 @@
+{
+  "aggregate": {
+    "dataset_name": "querypilot_retrieval_eval_v1",
+    "retrieval_mode": "existing_hybrid",
+    "timestamp_utc": "2026-11-03T23:38:04.591303+00:00",
+    "query_count": 10,
+    "total_measured_requests": 100,
+    "warmups_per_query": 1,
+    "repeats_per_query": 10,
+    "top_k": 5,
+    "latency_median_ms": 303.733,
+    "latency_p95_ms": 458.557,
+    "mean_recall_at_k": 0.7,
+    "mean_precision_at_k": 0.18,
+    "mean_mrr": 0.6083
+  },
+  "per_query": [
+    {
+      "query_id": "R001",
+      "query": "What does PostgreSQL ANALYZE do, and how does the query planner use its statistics?",
+      "repeats": 10,
+      "latency_median_ms": 360.124,
+      "latency_p95_ms": 493.313,
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R002",
+      "query": "What statistics does PostgreSQL collect about common values and data distribution?",
+      "repeats": 10,
+      "latency_median_ms": 339.733,
+      "latency_p95_ms": 477.931,
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.3333
+    },
+    {
+      "query_id": "R003",
+      "query": "How can I control the amount of statistics collected for a database column?",
+      "repeats": 10,
+      "latency_median_ms": 248.345,
+      "latency_p95_ms": 458.757,
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R004",
+      "query": "How does PostgreSQL calculate query plan costs and estimate execution work?",
+      "repeats": 10,
+      "latency_median_ms": 338.328,
+      "latency_p95_ms": 423.463,
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R005",
+      "query": "What is the difference between sequential scans and index scans?",
+      "repeats": 10,
+      "latency_median_ms": 335.516,
+      "latency_p95_ms": 427.82,
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R006",
+      "query": "How can EXPLAIN ANALYZE compare estimated row counts with actual row counts?",
+      "repeats": 10,
+      "latency_median_ms": 269.446,
+      "latency_p95_ms": 329.615,
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 0.25
+    },
+    {
+      "query_id": "R007",
+      "query": "How do I inspect buffer hits, reads, and other I/O activity in a PostgreSQL execution plan?",
+      "repeats": 10,
+      "latency_median_ms": 253.862,
+      "latency_p95_ms": 407.855,
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R008",
+      "query": "Can PostgreSQL combine multiple indexes when a query has several WHERE conditions?",
+      "repeats": 10,
+      "latency_median_ms": 304.695,
+      "latency_p95_ms": 380.414,
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R009",
+      "query": "Why can EXPLAIN ANALYZE produce side effects when executing a data-modifying statement?",
+      "repeats": 10,
+      "latency_median_ms": 318.156,
+      "latency_p95_ms": 516.984,
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R010",
+      "query": "Why might PostgreSQL choose a sequential scan instead of using an available index?",
+      "repeats": 10,
+      "latency_median_ms": 254.598,
+      "latency_p95_ms": 426.819,
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    }
+  ],
+  "raw_measurements": [
+    {
+      "query_id": "R001",
+      "repeat": 1,
+      "latency_ms": 256.159,
+      "retrieved_chunk_ids": [
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "5581c713-a4e6-4e4e-aadd-25f0654a9d98",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa",
+        "6d12371b-d301-4f5a-966e-c65007f724f7"
+      ],
+      "expected_chunk_ids": [
+        "329705a9-f479-4c75-8361-1851b5b21014"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R001",
+      "repeat": 2,
+      "latency_ms": 389.922,
+      "retrieved_chunk_ids": [
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "5581c713-a4e6-4e4e-aadd-25f0654a9d98",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa",
+        "6d12371b-d301-4f5a-966e-c65007f724f7"
+      ],
+      "expected_chunk_ids": [
+        "329705a9-f479-4c75-8361-1851b5b21014"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R001",
+      "repeat": 3,
+      "latency_ms": 449.264,
+      "retrieved_chunk_ids": [
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "5581c713-a4e6-4e4e-aadd-25f0654a9d98",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa",
+        "6d12371b-d301-4f5a-966e-c65007f724f7"
+      ],
+      "expected_chunk_ids": [
+        "329705a9-f479-4c75-8361-1851b5b21014"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R001",
+      "repeat": 4,
+      "latency_ms": 343.584,
+      "retrieved_chunk_ids": [
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "5581c713-a4e6-4e4e-aadd-25f0654a9d98",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa",
+        "6d12371b-d301-4f5a-966e-c65007f724f7"
+      ],
+      "expected_chunk_ids": [
+        "329705a9-f479-4c75-8361-1851b5b21014"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R001",
+      "repeat": 5,
+      "latency_ms": 493.313,
+      "retrieved_chunk_ids": [
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "5581c713-a4e6-4e4e-aadd-25f0654a9d98",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa",
+        "6d12371b-d301-4f5a-966e-c65007f724f7"
+      ],
+      "expected_chunk_ids": [
+        "329705a9-f479-4c75-8361-1851b5b21014"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R001",
+      "repeat": 6,
+      "latency_ms": 411.035,
+      "retrieved_chunk_ids": [
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "5581c713-a4e6-4e4e-aadd-25f0654a9d98",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa",
+        "6d12371b-d301-4f5a-966e-c65007f724f7"
+      ],
+      "expected_chunk_ids": [
+        "329705a9-f479-4c75-8361-1851b5b21014"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R001",
+      "repeat": 7,
+      "latency_ms": 338.214,
+      "retrieved_chunk_ids": [
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "5581c713-a4e6-4e4e-aadd-25f0654a9d98",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa",
+        "6d12371b-d301-4f5a-966e-c65007f724f7"
+      ],
+      "expected_chunk_ids": [
+        "329705a9-f479-4c75-8361-1851b5b21014"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R001",
+      "repeat": 8,
+      "latency_ms": 271.937,
+      "retrieved_chunk_ids": [
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "5581c713-a4e6-4e4e-aadd-25f0654a9d98",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa",
+        "6d12371b-d301-4f5a-966e-c65007f724f7"
+      ],
+      "expected_chunk_ids": [
+        "329705a9-f479-4c75-8361-1851b5b21014"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R001",
+      "repeat": 9,
+      "latency_ms": 340.015,
+      "retrieved_chunk_ids": [
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "5581c713-a4e6-4e4e-aadd-25f0654a9d98",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa",
+        "6d12371b-d301-4f5a-966e-c65007f724f7"
+      ],
+      "expected_chunk_ids": [
+        "329705a9-f479-4c75-8361-1851b5b21014"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R001",
+      "repeat": 10,
+      "latency_ms": 376.664,
+      "retrieved_chunk_ids": [
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "5581c713-a4e6-4e4e-aadd-25f0654a9d98",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa",
+        "6d12371b-d301-4f5a-966e-c65007f724f7"
+      ],
+      "expected_chunk_ids": [
+        "329705a9-f479-4c75-8361-1851b5b21014"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R002",
+      "repeat": 1,
+      "latency_ms": 255.099,
+      "retrieved_chunk_ids": [
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "5581c713-a4e6-4e4e-aadd-25f0654a9d98",
+        "6d12371b-d301-4f5a-966e-c65007f724f7"
+      ],
+      "expected_chunk_ids": [
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.3333333333333333
+    },
+    {
+      "query_id": "R002",
+      "repeat": 2,
+      "latency_ms": 345.819,
+      "retrieved_chunk_ids": [
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "5581c713-a4e6-4e4e-aadd-25f0654a9d98",
+        "6d12371b-d301-4f5a-966e-c65007f724f7"
+      ],
+      "expected_chunk_ids": [
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.3333333333333333
+    },
+    {
+      "query_id": "R002",
+      "repeat": 3,
+      "latency_ms": 246.241,
+      "retrieved_chunk_ids": [
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "5581c713-a4e6-4e4e-aadd-25f0654a9d98",
+        "6d12371b-d301-4f5a-966e-c65007f724f7"
+      ],
+      "expected_chunk_ids": [
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.3333333333333333
+    },
+    {
+      "query_id": "R002",
+      "repeat": 4,
+      "latency_ms": 408.16,
+      "retrieved_chunk_ids": [
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "5581c713-a4e6-4e4e-aadd-25f0654a9d98",
+        "6d12371b-d301-4f5a-966e-c65007f724f7"
+      ],
+      "expected_chunk_ids": [
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.3333333333333333
+    },
+    {
+      "query_id": "R002",
+      "repeat": 5,
+      "latency_ms": 477.931,
+      "retrieved_chunk_ids": [
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "5581c713-a4e6-4e4e-aadd-25f0654a9d98",
+        "6d12371b-d301-4f5a-966e-c65007f724f7"
+      ],
+      "expected_chunk_ids": [
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.3333333333333333
+    },
+    {
+      "query_id": "R002",
+      "repeat": 6,
+      "latency_ms": 228.649,
+      "retrieved_chunk_ids": [
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "5581c713-a4e6-4e4e-aadd-25f0654a9d98",
+        "6d12371b-d301-4f5a-966e-c65007f724f7"
+      ],
+      "expected_chunk_ids": [
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.3333333333333333
+    },
+    {
+      "query_id": "R002",
+      "repeat": 7,
+      "latency_ms": 241.405,
+      "retrieved_chunk_ids": [
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "5581c713-a4e6-4e4e-aadd-25f0654a9d98",
+        "6d12371b-d301-4f5a-966e-c65007f724f7"
+      ],
+      "expected_chunk_ids": [
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.3333333333333333
+    },
+    {
+      "query_id": "R002",
+      "repeat": 8,
+      "latency_ms": 440.146,
+      "retrieved_chunk_ids": [
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "5581c713-a4e6-4e4e-aadd-25f0654a9d98",
+        "6d12371b-d301-4f5a-966e-c65007f724f7"
+      ],
+      "expected_chunk_ids": [
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.3333333333333333
+    },
+    {
+      "query_id": "R002",
+      "repeat": 9,
+      "latency_ms": 409.014,
+      "retrieved_chunk_ids": [
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "5581c713-a4e6-4e4e-aadd-25f0654a9d98",
+        "6d12371b-d301-4f5a-966e-c65007f724f7"
+      ],
+      "expected_chunk_ids": [
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.3333333333333333
+    },
+    {
+      "query_id": "R002",
+      "repeat": 10,
+      "latency_ms": 333.648,
+      "retrieved_chunk_ids": [
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "5581c713-a4e6-4e4e-aadd-25f0654a9d98",
+        "6d12371b-d301-4f5a-966e-c65007f724f7"
+      ],
+      "expected_chunk_ids": [
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.3333333333333333
+    },
+    {
+      "query_id": "R003",
+      "repeat": 1,
+      "latency_ms": 249.001,
+      "retrieved_chunk_ids": [
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "dbaa2af5-f382-45e9-9d80-6a40a0f1b152",
+        "7732c4e3-62c6-4260-8093-60b33fc403e2",
+        "53b6073c-7c59-4f21-ab87-e4e79ecffbf1",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "expected_chunk_ids": [
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R003",
+      "repeat": 2,
+      "latency_ms": 432.604,
+      "retrieved_chunk_ids": [
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "dbaa2af5-f382-45e9-9d80-6a40a0f1b152",
+        "7732c4e3-62c6-4260-8093-60b33fc403e2",
+        "53b6073c-7c59-4f21-ab87-e4e79ecffbf1",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "expected_chunk_ids": [
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R003",
+      "repeat": 3,
+      "latency_ms": 238.817,
+      "retrieved_chunk_ids": [
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "dbaa2af5-f382-45e9-9d80-6a40a0f1b152",
+        "7732c4e3-62c6-4260-8093-60b33fc403e2",
+        "53b6073c-7c59-4f21-ab87-e4e79ecffbf1",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "expected_chunk_ids": [
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R003",
+      "repeat": 4,
+      "latency_ms": 223.043,
+      "retrieved_chunk_ids": [
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "dbaa2af5-f382-45e9-9d80-6a40a0f1b152",
+        "7732c4e3-62c6-4260-8093-60b33fc403e2",
+        "53b6073c-7c59-4f21-ab87-e4e79ecffbf1",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "expected_chunk_ids": [
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R003",
+      "repeat": 5,
+      "latency_ms": 247.689,
+      "retrieved_chunk_ids": [
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "dbaa2af5-f382-45e9-9d80-6a40a0f1b152",
+        "7732c4e3-62c6-4260-8093-60b33fc403e2",
+        "53b6073c-7c59-4f21-ab87-e4e79ecffbf1",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "expected_chunk_ids": [
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R003",
+      "repeat": 6,
+      "latency_ms": 458.757,
+      "retrieved_chunk_ids": [
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "dbaa2af5-f382-45e9-9d80-6a40a0f1b152",
+        "7732c4e3-62c6-4260-8093-60b33fc403e2",
+        "53b6073c-7c59-4f21-ab87-e4e79ecffbf1",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "expected_chunk_ids": [
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R003",
+      "repeat": 7,
+      "latency_ms": 392.352,
+      "retrieved_chunk_ids": [
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "dbaa2af5-f382-45e9-9d80-6a40a0f1b152",
+        "7732c4e3-62c6-4260-8093-60b33fc403e2",
+        "53b6073c-7c59-4f21-ab87-e4e79ecffbf1",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "expected_chunk_ids": [
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R003",
+      "repeat": 8,
+      "latency_ms": 236.798,
+      "retrieved_chunk_ids": [
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "dbaa2af5-f382-45e9-9d80-6a40a0f1b152",
+        "7732c4e3-62c6-4260-8093-60b33fc403e2",
+        "53b6073c-7c59-4f21-ab87-e4e79ecffbf1",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "expected_chunk_ids": [
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R003",
+      "repeat": 9,
+      "latency_ms": 233.85,
+      "retrieved_chunk_ids": [
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "dbaa2af5-f382-45e9-9d80-6a40a0f1b152",
+        "7732c4e3-62c6-4260-8093-60b33fc403e2",
+        "53b6073c-7c59-4f21-ab87-e4e79ecffbf1",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "expected_chunk_ids": [
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R003",
+      "repeat": 10,
+      "latency_ms": 304.347,
+      "retrieved_chunk_ids": [
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "dbaa2af5-f382-45e9-9d80-6a40a0f1b152",
+        "7732c4e3-62c6-4260-8093-60b33fc403e2",
+        "53b6073c-7c59-4f21-ab87-e4e79ecffbf1",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "expected_chunk_ids": [
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R004",
+      "repeat": 1,
+      "latency_ms": 289.905,
+      "retrieved_chunk_ids": [
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec",
+        "bedaeea0-886d-4d5b-8244-115387880903",
+        "da951a32-6b5b-4030-b94c-5fc546b2f382",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "14d9c413-cb45-4df1-a470-e19aa7fd5089",
+        "8723fa22-b5b3-4800-8653-f74b2d6d11a9",
+        "66d0ccb7-ed96-4c80-a24a-0ded63a9411a",
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa"
+      ],
+      "expected_chunk_ids": [
+        "bedaeea0-886d-4d5b-8244-115387880903",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R004",
+      "repeat": 2,
+      "latency_ms": 229.638,
+      "retrieved_chunk_ids": [
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec",
+        "bedaeea0-886d-4d5b-8244-115387880903",
+        "da951a32-6b5b-4030-b94c-5fc546b2f382",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "14d9c413-cb45-4df1-a470-e19aa7fd5089",
+        "8723fa22-b5b3-4800-8653-f74b2d6d11a9",
+        "66d0ccb7-ed96-4c80-a24a-0ded63a9411a",
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa"
+      ],
+      "expected_chunk_ids": [
+        "bedaeea0-886d-4d5b-8244-115387880903",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R004",
+      "repeat": 3,
+      "latency_ms": 350.917,
+      "retrieved_chunk_ids": [
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec",
+        "bedaeea0-886d-4d5b-8244-115387880903",
+        "da951a32-6b5b-4030-b94c-5fc546b2f382",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "14d9c413-cb45-4df1-a470-e19aa7fd5089",
+        "8723fa22-b5b3-4800-8653-f74b2d6d11a9",
+        "66d0ccb7-ed96-4c80-a24a-0ded63a9411a",
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa"
+      ],
+      "expected_chunk_ids": [
+        "bedaeea0-886d-4d5b-8244-115387880903",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R004",
+      "repeat": 4,
+      "latency_ms": 242.605,
+      "retrieved_chunk_ids": [
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec",
+        "bedaeea0-886d-4d5b-8244-115387880903",
+        "da951a32-6b5b-4030-b94c-5fc546b2f382",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "14d9c413-cb45-4df1-a470-e19aa7fd5089",
+        "8723fa22-b5b3-4800-8653-f74b2d6d11a9",
+        "66d0ccb7-ed96-4c80-a24a-0ded63a9411a",
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa"
+      ],
+      "expected_chunk_ids": [
+        "bedaeea0-886d-4d5b-8244-115387880903",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R004",
+      "repeat": 5,
+      "latency_ms": 345.813,
+      "retrieved_chunk_ids": [
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec",
+        "bedaeea0-886d-4d5b-8244-115387880903",
+        "da951a32-6b5b-4030-b94c-5fc546b2f382",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "14d9c413-cb45-4df1-a470-e19aa7fd5089",
+        "8723fa22-b5b3-4800-8653-f74b2d6d11a9",
+        "66d0ccb7-ed96-4c80-a24a-0ded63a9411a",
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa"
+      ],
+      "expected_chunk_ids": [
+        "bedaeea0-886d-4d5b-8244-115387880903",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R004",
+      "repeat": 6,
+      "latency_ms": 423.463,
+      "retrieved_chunk_ids": [
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec",
+        "bedaeea0-886d-4d5b-8244-115387880903",
+        "da951a32-6b5b-4030-b94c-5fc546b2f382",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "14d9c413-cb45-4df1-a470-e19aa7fd5089",
+        "8723fa22-b5b3-4800-8653-f74b2d6d11a9",
+        "66d0ccb7-ed96-4c80-a24a-0ded63a9411a",
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa"
+      ],
+      "expected_chunk_ids": [
+        "bedaeea0-886d-4d5b-8244-115387880903",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R004",
+      "repeat": 7,
+      "latency_ms": 309.366,
+      "retrieved_chunk_ids": [
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec",
+        "bedaeea0-886d-4d5b-8244-115387880903",
+        "da951a32-6b5b-4030-b94c-5fc546b2f382",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "14d9c413-cb45-4df1-a470-e19aa7fd5089",
+        "8723fa22-b5b3-4800-8653-f74b2d6d11a9",
+        "66d0ccb7-ed96-4c80-a24a-0ded63a9411a",
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa"
+      ],
+      "expected_chunk_ids": [
+        "bedaeea0-886d-4d5b-8244-115387880903",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R004",
+      "repeat": 8,
+      "latency_ms": 330.842,
+      "retrieved_chunk_ids": [
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec",
+        "bedaeea0-886d-4d5b-8244-115387880903",
+        "da951a32-6b5b-4030-b94c-5fc546b2f382",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "14d9c413-cb45-4df1-a470-e19aa7fd5089",
+        "8723fa22-b5b3-4800-8653-f74b2d6d11a9",
+        "66d0ccb7-ed96-4c80-a24a-0ded63a9411a",
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa"
+      ],
+      "expected_chunk_ids": [
+        "bedaeea0-886d-4d5b-8244-115387880903",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R004",
+      "repeat": 9,
+      "latency_ms": 414.818,
+      "retrieved_chunk_ids": [
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec",
+        "bedaeea0-886d-4d5b-8244-115387880903",
+        "da951a32-6b5b-4030-b94c-5fc546b2f382",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "14d9c413-cb45-4df1-a470-e19aa7fd5089",
+        "8723fa22-b5b3-4800-8653-f74b2d6d11a9",
+        "66d0ccb7-ed96-4c80-a24a-0ded63a9411a",
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa"
+      ],
+      "expected_chunk_ids": [
+        "bedaeea0-886d-4d5b-8244-115387880903",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R004",
+      "repeat": 10,
+      "latency_ms": 422.529,
+      "retrieved_chunk_ids": [
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec",
+        "bedaeea0-886d-4d5b-8244-115387880903",
+        "da951a32-6b5b-4030-b94c-5fc546b2f382",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "14d9c413-cb45-4df1-a470-e19aa7fd5089",
+        "8723fa22-b5b3-4800-8653-f74b2d6d11a9",
+        "66d0ccb7-ed96-4c80-a24a-0ded63a9411a",
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa"
+      ],
+      "expected_chunk_ids": [
+        "bedaeea0-886d-4d5b-8244-115387880903",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "query_id": "R005",
+      "repeat": 1,
+      "latency_ms": 401.265,
+      "retrieved_chunk_ids": [
+        "b893a46f-8469-415b-9ccf-f718927f232a",
+        "da951a32-6b5b-4030-b94c-5fc546b2f382",
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88",
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "6c34ba22-a7f6-4b0d-aecb-995c8fe2216a",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "814c85bb-4fec-42ef-a173-40209ca9df25"
+      ],
+      "expected_chunk_ids": [
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec",
+        "6858afc4-95b6-4a99-b28a-fc6b9b265952"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R005",
+      "repeat": 2,
+      "latency_ms": 333.389,
+      "retrieved_chunk_ids": [
+        "b893a46f-8469-415b-9ccf-f718927f232a",
+        "da951a32-6b5b-4030-b94c-5fc546b2f382",
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88",
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "6c34ba22-a7f6-4b0d-aecb-995c8fe2216a",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "814c85bb-4fec-42ef-a173-40209ca9df25"
+      ],
+      "expected_chunk_ids": [
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec",
+        "6858afc4-95b6-4a99-b28a-fc6b9b265952"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R005",
+      "repeat": 3,
+      "latency_ms": 251.817,
+      "retrieved_chunk_ids": [
+        "b893a46f-8469-415b-9ccf-f718927f232a",
+        "da951a32-6b5b-4030-b94c-5fc546b2f382",
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88",
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "6c34ba22-a7f6-4b0d-aecb-995c8fe2216a",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "814c85bb-4fec-42ef-a173-40209ca9df25"
+      ],
+      "expected_chunk_ids": [
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec",
+        "6858afc4-95b6-4a99-b28a-fc6b9b265952"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R005",
+      "repeat": 4,
+      "latency_ms": 427.82,
+      "retrieved_chunk_ids": [
+        "b893a46f-8469-415b-9ccf-f718927f232a",
+        "da951a32-6b5b-4030-b94c-5fc546b2f382",
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88",
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "6c34ba22-a7f6-4b0d-aecb-995c8fe2216a",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "814c85bb-4fec-42ef-a173-40209ca9df25"
+      ],
+      "expected_chunk_ids": [
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec",
+        "6858afc4-95b6-4a99-b28a-fc6b9b265952"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R005",
+      "repeat": 5,
+      "latency_ms": 241.873,
+      "retrieved_chunk_ids": [
+        "b893a46f-8469-415b-9ccf-f718927f232a",
+        "da951a32-6b5b-4030-b94c-5fc546b2f382",
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88",
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "6c34ba22-a7f6-4b0d-aecb-995c8fe2216a",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "814c85bb-4fec-42ef-a173-40209ca9df25"
+      ],
+      "expected_chunk_ids": [
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec",
+        "6858afc4-95b6-4a99-b28a-fc6b9b265952"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R005",
+      "repeat": 6,
+      "latency_ms": 337.643,
+      "retrieved_chunk_ids": [
+        "b893a46f-8469-415b-9ccf-f718927f232a",
+        "da951a32-6b5b-4030-b94c-5fc546b2f382",
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88",
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "6c34ba22-a7f6-4b0d-aecb-995c8fe2216a",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "814c85bb-4fec-42ef-a173-40209ca9df25"
+      ],
+      "expected_chunk_ids": [
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec",
+        "6858afc4-95b6-4a99-b28a-fc6b9b265952"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R005",
+      "repeat": 7,
+      "latency_ms": 394.606,
+      "retrieved_chunk_ids": [
+        "b893a46f-8469-415b-9ccf-f718927f232a",
+        "da951a32-6b5b-4030-b94c-5fc546b2f382",
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88",
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "6c34ba22-a7f6-4b0d-aecb-995c8fe2216a",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "814c85bb-4fec-42ef-a173-40209ca9df25"
+      ],
+      "expected_chunk_ids": [
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec",
+        "6858afc4-95b6-4a99-b28a-fc6b9b265952"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R005",
+      "repeat": 8,
+      "latency_ms": 226.516,
+      "retrieved_chunk_ids": [
+        "b893a46f-8469-415b-9ccf-f718927f232a",
+        "da951a32-6b5b-4030-b94c-5fc546b2f382",
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88",
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "6c34ba22-a7f6-4b0d-aecb-995c8fe2216a",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "814c85bb-4fec-42ef-a173-40209ca9df25"
+      ],
+      "expected_chunk_ids": [
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec",
+        "6858afc4-95b6-4a99-b28a-fc6b9b265952"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R005",
+      "repeat": 9,
+      "latency_ms": 237.316,
+      "retrieved_chunk_ids": [
+        "b893a46f-8469-415b-9ccf-f718927f232a",
+        "da951a32-6b5b-4030-b94c-5fc546b2f382",
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88",
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "6c34ba22-a7f6-4b0d-aecb-995c8fe2216a",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "814c85bb-4fec-42ef-a173-40209ca9df25"
+      ],
+      "expected_chunk_ids": [
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec",
+        "6858afc4-95b6-4a99-b28a-fc6b9b265952"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R005",
+      "repeat": 10,
+      "latency_ms": 395.022,
+      "retrieved_chunk_ids": [
+        "b893a46f-8469-415b-9ccf-f718927f232a",
+        "da951a32-6b5b-4030-b94c-5fc546b2f382",
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88",
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "6c34ba22-a7f6-4b0d-aecb-995c8fe2216a",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "814c85bb-4fec-42ef-a173-40209ca9df25"
+      ],
+      "expected_chunk_ids": [
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec",
+        "6858afc4-95b6-4a99-b28a-fc6b9b265952"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R006",
+      "repeat": 1,
+      "latency_ms": 266.652,
+      "retrieved_chunk_ids": [
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa",
+        "66d0ccb7-ed96-4c80-a24a-0ded63a9411a",
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "081a2999-2f24-4cf4-9078-e79adfc4a741",
+        "f65a0ea9-254e-442c-821e-3cd7f9ec0441"
+      ],
+      "expected_chunk_ids": [
+        "e13d8049-0ec0-469a-96dc-8f23bba7cdaa",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 0.25
+    },
+    {
+      "query_id": "R006",
+      "repeat": 2,
+      "latency_ms": 275.812,
+      "retrieved_chunk_ids": [
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa",
+        "66d0ccb7-ed96-4c80-a24a-0ded63a9411a",
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "081a2999-2f24-4cf4-9078-e79adfc4a741",
+        "f65a0ea9-254e-442c-821e-3cd7f9ec0441"
+      ],
+      "expected_chunk_ids": [
+        "e13d8049-0ec0-469a-96dc-8f23bba7cdaa",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 0.25
+    },
+    {
+      "query_id": "R006",
+      "repeat": 3,
+      "latency_ms": 298.64,
+      "retrieved_chunk_ids": [
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa",
+        "66d0ccb7-ed96-4c80-a24a-0ded63a9411a",
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "081a2999-2f24-4cf4-9078-e79adfc4a741",
+        "f65a0ea9-254e-442c-821e-3cd7f9ec0441"
+      ],
+      "expected_chunk_ids": [
+        "e13d8049-0ec0-469a-96dc-8f23bba7cdaa",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 0.25
+    },
+    {
+      "query_id": "R006",
+      "repeat": 4,
+      "latency_ms": 318.923,
+      "retrieved_chunk_ids": [
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa",
+        "66d0ccb7-ed96-4c80-a24a-0ded63a9411a",
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "081a2999-2f24-4cf4-9078-e79adfc4a741",
+        "f65a0ea9-254e-442c-821e-3cd7f9ec0441"
+      ],
+      "expected_chunk_ids": [
+        "e13d8049-0ec0-469a-96dc-8f23bba7cdaa",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 0.25
+    },
+    {
+      "query_id": "R006",
+      "repeat": 5,
+      "latency_ms": 272.241,
+      "retrieved_chunk_ids": [
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa",
+        "66d0ccb7-ed96-4c80-a24a-0ded63a9411a",
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "081a2999-2f24-4cf4-9078-e79adfc4a741",
+        "f65a0ea9-254e-442c-821e-3cd7f9ec0441"
+      ],
+      "expected_chunk_ids": [
+        "e13d8049-0ec0-469a-96dc-8f23bba7cdaa",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 0.25
+    },
+    {
+      "query_id": "R006",
+      "repeat": 6,
+      "latency_ms": 241.122,
+      "retrieved_chunk_ids": [
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa",
+        "66d0ccb7-ed96-4c80-a24a-0ded63a9411a",
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "081a2999-2f24-4cf4-9078-e79adfc4a741",
+        "f65a0ea9-254e-442c-821e-3cd7f9ec0441"
+      ],
+      "expected_chunk_ids": [
+        "e13d8049-0ec0-469a-96dc-8f23bba7cdaa",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 0.25
+    },
+    {
+      "query_id": "R006",
+      "repeat": 7,
+      "latency_ms": 247.355,
+      "retrieved_chunk_ids": [
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa",
+        "66d0ccb7-ed96-4c80-a24a-0ded63a9411a",
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "081a2999-2f24-4cf4-9078-e79adfc4a741",
+        "f65a0ea9-254e-442c-821e-3cd7f9ec0441"
+      ],
+      "expected_chunk_ids": [
+        "e13d8049-0ec0-469a-96dc-8f23bba7cdaa",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 0.25
+    },
+    {
+      "query_id": "R006",
+      "repeat": 8,
+      "latency_ms": 329.615,
+      "retrieved_chunk_ids": [
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa",
+        "66d0ccb7-ed96-4c80-a24a-0ded63a9411a",
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "081a2999-2f24-4cf4-9078-e79adfc4a741",
+        "f65a0ea9-254e-442c-821e-3cd7f9ec0441"
+      ],
+      "expected_chunk_ids": [
+        "e13d8049-0ec0-469a-96dc-8f23bba7cdaa",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 0.25
+    },
+    {
+      "query_id": "R006",
+      "repeat": 9,
+      "latency_ms": 261.705,
+      "retrieved_chunk_ids": [
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa",
+        "66d0ccb7-ed96-4c80-a24a-0ded63a9411a",
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "081a2999-2f24-4cf4-9078-e79adfc4a741",
+        "f65a0ea9-254e-442c-821e-3cd7f9ec0441"
+      ],
+      "expected_chunk_ids": [
+        "e13d8049-0ec0-469a-96dc-8f23bba7cdaa",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 0.25
+    },
+    {
+      "query_id": "R006",
+      "repeat": 10,
+      "latency_ms": 233.02,
+      "retrieved_chunk_ids": [
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa",
+        "66d0ccb7-ed96-4c80-a24a-0ded63a9411a",
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "081a2999-2f24-4cf4-9078-e79adfc4a741",
+        "f65a0ea9-254e-442c-821e-3cd7f9ec0441"
+      ],
+      "expected_chunk_ids": [
+        "e13d8049-0ec0-469a-96dc-8f23bba7cdaa",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 0.25
+    },
+    {
+      "query_id": "R007",
+      "repeat": 1,
+      "latency_ms": 228.653,
+      "retrieved_chunk_ids": [
+        "a7354911-4913-4fd7-a836-9b3d310f94f4",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "5581c713-a4e6-4e4e-aadd-25f0654a9d98",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "a3f45817-f39e-4e80-b63e-d348eafce5b5",
+        "fd610365-fd56-4672-87f5-f201fdc63a46",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88"
+      ],
+      "expected_chunk_ids": [
+        "a7354911-4913-4fd7-a836-9b3d310f94f4"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R007",
+      "repeat": 2,
+      "latency_ms": 233.121,
+      "retrieved_chunk_ids": [
+        "a7354911-4913-4fd7-a836-9b3d310f94f4",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "5581c713-a4e6-4e4e-aadd-25f0654a9d98",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "a3f45817-f39e-4e80-b63e-d348eafce5b5",
+        "fd610365-fd56-4672-87f5-f201fdc63a46",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88"
+      ],
+      "expected_chunk_ids": [
+        "a7354911-4913-4fd7-a836-9b3d310f94f4"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R007",
+      "repeat": 3,
+      "latency_ms": 223.942,
+      "retrieved_chunk_ids": [
+        "a7354911-4913-4fd7-a836-9b3d310f94f4",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "5581c713-a4e6-4e4e-aadd-25f0654a9d98",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "a3f45817-f39e-4e80-b63e-d348eafce5b5",
+        "fd610365-fd56-4672-87f5-f201fdc63a46",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88"
+      ],
+      "expected_chunk_ids": [
+        "a7354911-4913-4fd7-a836-9b3d310f94f4"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R007",
+      "repeat": 4,
+      "latency_ms": 324.195,
+      "retrieved_chunk_ids": [
+        "a7354911-4913-4fd7-a836-9b3d310f94f4",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "5581c713-a4e6-4e4e-aadd-25f0654a9d98",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "a3f45817-f39e-4e80-b63e-d348eafce5b5",
+        "fd610365-fd56-4672-87f5-f201fdc63a46",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88"
+      ],
+      "expected_chunk_ids": [
+        "a7354911-4913-4fd7-a836-9b3d310f94f4"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R007",
+      "repeat": 5,
+      "latency_ms": 251.766,
+      "retrieved_chunk_ids": [
+        "a7354911-4913-4fd7-a836-9b3d310f94f4",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "5581c713-a4e6-4e4e-aadd-25f0654a9d98",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "a3f45817-f39e-4e80-b63e-d348eafce5b5",
+        "fd610365-fd56-4672-87f5-f201fdc63a46",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88"
+      ],
+      "expected_chunk_ids": [
+        "a7354911-4913-4fd7-a836-9b3d310f94f4"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R007",
+      "repeat": 6,
+      "latency_ms": 248.966,
+      "retrieved_chunk_ids": [
+        "a7354911-4913-4fd7-a836-9b3d310f94f4",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "5581c713-a4e6-4e4e-aadd-25f0654a9d98",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "a3f45817-f39e-4e80-b63e-d348eafce5b5",
+        "fd610365-fd56-4672-87f5-f201fdc63a46",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88"
+      ],
+      "expected_chunk_ids": [
+        "a7354911-4913-4fd7-a836-9b3d310f94f4"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R007",
+      "repeat": 7,
+      "latency_ms": 407.855,
+      "retrieved_chunk_ids": [
+        "a7354911-4913-4fd7-a836-9b3d310f94f4",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "5581c713-a4e6-4e4e-aadd-25f0654a9d98",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "a3f45817-f39e-4e80-b63e-d348eafce5b5",
+        "fd610365-fd56-4672-87f5-f201fdc63a46",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88"
+      ],
+      "expected_chunk_ids": [
+        "a7354911-4913-4fd7-a836-9b3d310f94f4"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R007",
+      "repeat": 8,
+      "latency_ms": 335.759,
+      "retrieved_chunk_ids": [
+        "a7354911-4913-4fd7-a836-9b3d310f94f4",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "5581c713-a4e6-4e4e-aadd-25f0654a9d98",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "a3f45817-f39e-4e80-b63e-d348eafce5b5",
+        "fd610365-fd56-4672-87f5-f201fdc63a46",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88"
+      ],
+      "expected_chunk_ids": [
+        "a7354911-4913-4fd7-a836-9b3d310f94f4"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R007",
+      "repeat": 9,
+      "latency_ms": 255.957,
+      "retrieved_chunk_ids": [
+        "a7354911-4913-4fd7-a836-9b3d310f94f4",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "5581c713-a4e6-4e4e-aadd-25f0654a9d98",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "a3f45817-f39e-4e80-b63e-d348eafce5b5",
+        "fd610365-fd56-4672-87f5-f201fdc63a46",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88"
+      ],
+      "expected_chunk_ids": [
+        "a7354911-4913-4fd7-a836-9b3d310f94f4"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R007",
+      "repeat": 10,
+      "latency_ms": 328.695,
+      "retrieved_chunk_ids": [
+        "a7354911-4913-4fd7-a836-9b3d310f94f4",
+        "329705a9-f479-4c75-8361-1851b5b21014",
+        "5581c713-a4e6-4e4e-aadd-25f0654a9d98",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "a3f45817-f39e-4e80-b63e-d348eafce5b5",
+        "fd610365-fd56-4672-87f5-f201fdc63a46",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88"
+      ],
+      "expected_chunk_ids": [
+        "a7354911-4913-4fd7-a836-9b3d310f94f4"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R008",
+      "repeat": 1,
+      "latency_ms": 373.465,
+      "retrieved_chunk_ids": [
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe",
+        "7430d0c0-bbed-4f38-ad31-86e80691e4ca",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "2e639a42-b04d-49b0-979e-81d7bcb622d5",
+        "6c34ba22-a7f6-4b0d-aecb-995c8fe2216a",
+        "f65a0ea9-254e-442c-821e-3cd7f9ec0441",
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "814c85bb-4fec-42ef-a173-40209ca9df25"
+      ],
+      "expected_chunk_ids": [
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R008",
+      "repeat": 2,
+      "latency_ms": 281.852,
+      "retrieved_chunk_ids": [
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe",
+        "7430d0c0-bbed-4f38-ad31-86e80691e4ca",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "2e639a42-b04d-49b0-979e-81d7bcb622d5",
+        "6c34ba22-a7f6-4b0d-aecb-995c8fe2216a",
+        "f65a0ea9-254e-442c-821e-3cd7f9ec0441",
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "814c85bb-4fec-42ef-a173-40209ca9df25"
+      ],
+      "expected_chunk_ids": [
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R008",
+      "repeat": 3,
+      "latency_ms": 380.414,
+      "retrieved_chunk_ids": [
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe",
+        "7430d0c0-bbed-4f38-ad31-86e80691e4ca",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "2e639a42-b04d-49b0-979e-81d7bcb622d5",
+        "6c34ba22-a7f6-4b0d-aecb-995c8fe2216a",
+        "f65a0ea9-254e-442c-821e-3cd7f9ec0441",
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "814c85bb-4fec-42ef-a173-40209ca9df25"
+      ],
+      "expected_chunk_ids": [
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R008",
+      "repeat": 4,
+      "latency_ms": 247.207,
+      "retrieved_chunk_ids": [
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe",
+        "7430d0c0-bbed-4f38-ad31-86e80691e4ca",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "2e639a42-b04d-49b0-979e-81d7bcb622d5",
+        "6c34ba22-a7f6-4b0d-aecb-995c8fe2216a",
+        "f65a0ea9-254e-442c-821e-3cd7f9ec0441",
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "814c85bb-4fec-42ef-a173-40209ca9df25"
+      ],
+      "expected_chunk_ids": [
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R008",
+      "repeat": 5,
+      "latency_ms": 309.131,
+      "retrieved_chunk_ids": [
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe",
+        "7430d0c0-bbed-4f38-ad31-86e80691e4ca",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "2e639a42-b04d-49b0-979e-81d7bcb622d5",
+        "6c34ba22-a7f6-4b0d-aecb-995c8fe2216a",
+        "f65a0ea9-254e-442c-821e-3cd7f9ec0441",
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "814c85bb-4fec-42ef-a173-40209ca9df25"
+      ],
+      "expected_chunk_ids": [
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R008",
+      "repeat": 6,
+      "latency_ms": 235.06,
+      "retrieved_chunk_ids": [
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe",
+        "7430d0c0-bbed-4f38-ad31-86e80691e4ca",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "2e639a42-b04d-49b0-979e-81d7bcb622d5",
+        "6c34ba22-a7f6-4b0d-aecb-995c8fe2216a",
+        "f65a0ea9-254e-442c-821e-3cd7f9ec0441",
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "814c85bb-4fec-42ef-a173-40209ca9df25"
+      ],
+      "expected_chunk_ids": [
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R008",
+      "repeat": 7,
+      "latency_ms": 229.926,
+      "retrieved_chunk_ids": [
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe",
+        "7430d0c0-bbed-4f38-ad31-86e80691e4ca",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "2e639a42-b04d-49b0-979e-81d7bcb622d5",
+        "6c34ba22-a7f6-4b0d-aecb-995c8fe2216a",
+        "f65a0ea9-254e-442c-821e-3cd7f9ec0441",
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "814c85bb-4fec-42ef-a173-40209ca9df25"
+      ],
+      "expected_chunk_ids": [
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R008",
+      "repeat": 8,
+      "latency_ms": 303.12,
+      "retrieved_chunk_ids": [
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe",
+        "7430d0c0-bbed-4f38-ad31-86e80691e4ca",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "2e639a42-b04d-49b0-979e-81d7bcb622d5",
+        "6c34ba22-a7f6-4b0d-aecb-995c8fe2216a",
+        "f65a0ea9-254e-442c-821e-3cd7f9ec0441",
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "814c85bb-4fec-42ef-a173-40209ca9df25"
+      ],
+      "expected_chunk_ids": [
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R008",
+      "repeat": 9,
+      "latency_ms": 306.27,
+      "retrieved_chunk_ids": [
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe",
+        "7430d0c0-bbed-4f38-ad31-86e80691e4ca",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "2e639a42-b04d-49b0-979e-81d7bcb622d5",
+        "6c34ba22-a7f6-4b0d-aecb-995c8fe2216a",
+        "f65a0ea9-254e-442c-821e-3cd7f9ec0441",
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "814c85bb-4fec-42ef-a173-40209ca9df25"
+      ],
+      "expected_chunk_ids": [
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R008",
+      "repeat": 10,
+      "latency_ms": 371.979,
+      "retrieved_chunk_ids": [
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe",
+        "7430d0c0-bbed-4f38-ad31-86e80691e4ca",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "2e639a42-b04d-49b0-979e-81d7bcb622d5",
+        "6c34ba22-a7f6-4b0d-aecb-995c8fe2216a",
+        "f65a0ea9-254e-442c-821e-3cd7f9ec0441",
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "814c85bb-4fec-42ef-a173-40209ca9df25"
+      ],
+      "expected_chunk_ids": [
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe"
+      ],
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R009",
+      "repeat": 1,
+      "latency_ms": 516.984,
+      "retrieved_chunk_ids": [
+        "16fad69a-48cc-496d-8a36-bfb36ed432f2",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "8b3b7b4c-e33b-47f7-8a12-8b6d07cdcd75",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88",
+        "dbaa2af5-f382-45e9-9d80-6a40a0f1b152",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df"
+      ],
+      "expected_chunk_ids": [
+        "16fad69a-48cc-496d-8a36-bfb36ed432f2",
+        "a7354911-4913-4fd7-a836-9b3d310f94f4"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R009",
+      "repeat": 2,
+      "latency_ms": 238.993,
+      "retrieved_chunk_ids": [
+        "16fad69a-48cc-496d-8a36-bfb36ed432f2",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "8b3b7b4c-e33b-47f7-8a12-8b6d07cdcd75",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88",
+        "dbaa2af5-f382-45e9-9d80-6a40a0f1b152",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df"
+      ],
+      "expected_chunk_ids": [
+        "16fad69a-48cc-496d-8a36-bfb36ed432f2",
+        "a7354911-4913-4fd7-a836-9b3d310f94f4"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R009",
+      "repeat": 3,
+      "latency_ms": 458.557,
+      "retrieved_chunk_ids": [
+        "16fad69a-48cc-496d-8a36-bfb36ed432f2",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "8b3b7b4c-e33b-47f7-8a12-8b6d07cdcd75",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88",
+        "dbaa2af5-f382-45e9-9d80-6a40a0f1b152",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df"
+      ],
+      "expected_chunk_ids": [
+        "16fad69a-48cc-496d-8a36-bfb36ed432f2",
+        "a7354911-4913-4fd7-a836-9b3d310f94f4"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R009",
+      "repeat": 4,
+      "latency_ms": 390.647,
+      "retrieved_chunk_ids": [
+        "16fad69a-48cc-496d-8a36-bfb36ed432f2",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "8b3b7b4c-e33b-47f7-8a12-8b6d07cdcd75",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88",
+        "dbaa2af5-f382-45e9-9d80-6a40a0f1b152",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df"
+      ],
+      "expected_chunk_ids": [
+        "16fad69a-48cc-496d-8a36-bfb36ed432f2",
+        "a7354911-4913-4fd7-a836-9b3d310f94f4"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R009",
+      "repeat": 5,
+      "latency_ms": 267.837,
+      "retrieved_chunk_ids": [
+        "16fad69a-48cc-496d-8a36-bfb36ed432f2",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "8b3b7b4c-e33b-47f7-8a12-8b6d07cdcd75",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88",
+        "dbaa2af5-f382-45e9-9d80-6a40a0f1b152",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df"
+      ],
+      "expected_chunk_ids": [
+        "16fad69a-48cc-496d-8a36-bfb36ed432f2",
+        "a7354911-4913-4fd7-a836-9b3d310f94f4"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R009",
+      "repeat": 6,
+      "latency_ms": 290.775,
+      "retrieved_chunk_ids": [
+        "16fad69a-48cc-496d-8a36-bfb36ed432f2",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "8b3b7b4c-e33b-47f7-8a12-8b6d07cdcd75",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88",
+        "dbaa2af5-f382-45e9-9d80-6a40a0f1b152",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df"
+      ],
+      "expected_chunk_ids": [
+        "16fad69a-48cc-496d-8a36-bfb36ed432f2",
+        "a7354911-4913-4fd7-a836-9b3d310f94f4"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R009",
+      "repeat": 7,
+      "latency_ms": 294.504,
+      "retrieved_chunk_ids": [
+        "16fad69a-48cc-496d-8a36-bfb36ed432f2",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "8b3b7b4c-e33b-47f7-8a12-8b6d07cdcd75",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88",
+        "dbaa2af5-f382-45e9-9d80-6a40a0f1b152",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df"
+      ],
+      "expected_chunk_ids": [
+        "16fad69a-48cc-496d-8a36-bfb36ed432f2",
+        "a7354911-4913-4fd7-a836-9b3d310f94f4"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R009",
+      "repeat": 8,
+      "latency_ms": 328.841,
+      "retrieved_chunk_ids": [
+        "16fad69a-48cc-496d-8a36-bfb36ed432f2",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "8b3b7b4c-e33b-47f7-8a12-8b6d07cdcd75",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88",
+        "dbaa2af5-f382-45e9-9d80-6a40a0f1b152",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df"
+      ],
+      "expected_chunk_ids": [
+        "16fad69a-48cc-496d-8a36-bfb36ed432f2",
+        "a7354911-4913-4fd7-a836-9b3d310f94f4"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R009",
+      "repeat": 9,
+      "latency_ms": 463.313,
+      "retrieved_chunk_ids": [
+        "16fad69a-48cc-496d-8a36-bfb36ed432f2",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "8b3b7b4c-e33b-47f7-8a12-8b6d07cdcd75",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88",
+        "dbaa2af5-f382-45e9-9d80-6a40a0f1b152",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df"
+      ],
+      "expected_chunk_ids": [
+        "16fad69a-48cc-496d-8a36-bfb36ed432f2",
+        "a7354911-4913-4fd7-a836-9b3d310f94f4"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R009",
+      "repeat": 10,
+      "latency_ms": 307.471,
+      "retrieved_chunk_ids": [
+        "16fad69a-48cc-496d-8a36-bfb36ed432f2",
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b",
+        "8b3b7b4c-e33b-47f7-8a12-8b6d07cdcd75",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88",
+        "dbaa2af5-f382-45e9-9d80-6a40a0f1b152",
+        "ec5c4d34-987e-4dc5-b6f0-846650c011ff",
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8",
+        "ab9ec6ad-9965-424f-b0d6-17d6dfe090df"
+      ],
+      "expected_chunk_ids": [
+        "16fad69a-48cc-496d-8a36-bfb36ed432f2",
+        "a7354911-4913-4fd7-a836-9b3d310f94f4"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R010",
+      "repeat": 1,
+      "latency_ms": 239.873,
+      "retrieved_chunk_ids": [
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe",
+        "b893a46f-8469-415b-9ccf-f718927f232a",
+        "6c34ba22-a7f6-4b0d-aecb-995c8fe2216a",
+        "046f1c0d-7bba-4ff3-ac0f-96d7c64368da",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "814c85bb-4fec-42ef-a173-40209ca9df25",
+        "7e99c2c5-e014-4dc4-b916-7ac3098c0a73"
+      ],
+      "expected_chunk_ids": [
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R010",
+      "repeat": 2,
+      "latency_ms": 264.417,
+      "retrieved_chunk_ids": [
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe",
+        "b893a46f-8469-415b-9ccf-f718927f232a",
+        "6c34ba22-a7f6-4b0d-aecb-995c8fe2216a",
+        "046f1c0d-7bba-4ff3-ac0f-96d7c64368da",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "814c85bb-4fec-42ef-a173-40209ca9df25",
+        "7e99c2c5-e014-4dc4-b916-7ac3098c0a73"
+      ],
+      "expected_chunk_ids": [
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R010",
+      "repeat": 3,
+      "latency_ms": 244.779,
+      "retrieved_chunk_ids": [
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe",
+        "b893a46f-8469-415b-9ccf-f718927f232a",
+        "6c34ba22-a7f6-4b0d-aecb-995c8fe2216a",
+        "046f1c0d-7bba-4ff3-ac0f-96d7c64368da",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "814c85bb-4fec-42ef-a173-40209ca9df25",
+        "7e99c2c5-e014-4dc4-b916-7ac3098c0a73"
+      ],
+      "expected_chunk_ids": [
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R010",
+      "repeat": 4,
+      "latency_ms": 238.54,
+      "retrieved_chunk_ids": [
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe",
+        "b893a46f-8469-415b-9ccf-f718927f232a",
+        "6c34ba22-a7f6-4b0d-aecb-995c8fe2216a",
+        "046f1c0d-7bba-4ff3-ac0f-96d7c64368da",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "814c85bb-4fec-42ef-a173-40209ca9df25",
+        "7e99c2c5-e014-4dc4-b916-7ac3098c0a73"
+      ],
+      "expected_chunk_ids": [
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R010",
+      "repeat": 5,
+      "latency_ms": 233.494,
+      "retrieved_chunk_ids": [
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe",
+        "b893a46f-8469-415b-9ccf-f718927f232a",
+        "6c34ba22-a7f6-4b0d-aecb-995c8fe2216a",
+        "046f1c0d-7bba-4ff3-ac0f-96d7c64368da",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "814c85bb-4fec-42ef-a173-40209ca9df25",
+        "7e99c2c5-e014-4dc4-b916-7ac3098c0a73"
+      ],
+      "expected_chunk_ids": [
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R010",
+      "repeat": 6,
+      "latency_ms": 228.563,
+      "retrieved_chunk_ids": [
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe",
+        "b893a46f-8469-415b-9ccf-f718927f232a",
+        "6c34ba22-a7f6-4b0d-aecb-995c8fe2216a",
+        "046f1c0d-7bba-4ff3-ac0f-96d7c64368da",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "814c85bb-4fec-42ef-a173-40209ca9df25",
+        "7e99c2c5-e014-4dc4-b916-7ac3098c0a73"
+      ],
+      "expected_chunk_ids": [
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R010",
+      "repeat": 7,
+      "latency_ms": 265.224,
+      "retrieved_chunk_ids": [
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe",
+        "b893a46f-8469-415b-9ccf-f718927f232a",
+        "6c34ba22-a7f6-4b0d-aecb-995c8fe2216a",
+        "046f1c0d-7bba-4ff3-ac0f-96d7c64368da",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "814c85bb-4fec-42ef-a173-40209ca9df25",
+        "7e99c2c5-e014-4dc4-b916-7ac3098c0a73"
+      ],
+      "expected_chunk_ids": [
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R010",
+      "repeat": 8,
+      "latency_ms": 426.819,
+      "retrieved_chunk_ids": [
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe",
+        "b893a46f-8469-415b-9ccf-f718927f232a",
+        "6c34ba22-a7f6-4b0d-aecb-995c8fe2216a",
+        "046f1c0d-7bba-4ff3-ac0f-96d7c64368da",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "814c85bb-4fec-42ef-a173-40209ca9df25",
+        "7e99c2c5-e014-4dc4-b916-7ac3098c0a73"
+      ],
+      "expected_chunk_ids": [
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R010",
+      "repeat": 9,
+      "latency_ms": 296.936,
+      "retrieved_chunk_ids": [
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe",
+        "b893a46f-8469-415b-9ccf-f718927f232a",
+        "6c34ba22-a7f6-4b0d-aecb-995c8fe2216a",
+        "046f1c0d-7bba-4ff3-ac0f-96d7c64368da",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "814c85bb-4fec-42ef-a173-40209ca9df25",
+        "7e99c2c5-e014-4dc4-b916-7ac3098c0a73"
+      ],
+      "expected_chunk_ids": [
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R010",
+      "repeat": 10,
+      "latency_ms": 313.796,
+      "retrieved_chunk_ids": [
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe",
+        "b893a46f-8469-415b-9ccf-f718927f232a",
+        "6c34ba22-a7f6-4b0d-aecb-995c8fe2216a",
+        "046f1c0d-7bba-4ff3-ac0f-96d7c64368da",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "814c85bb-4fec-42ef-a173-40209ca9df25",
+        "7e99c2c5-e014-4dc4-b916-7ac3098c0a73"
+      ],
+      "expected_chunk_ids": [
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba",
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec"
+      ],
+      "recall_at_k": 0.5,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    }
+  ]
+}

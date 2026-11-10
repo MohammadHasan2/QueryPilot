@@ -1,0 +1,81 @@
+{
+  "dataset_name": "querypilot_retrieval_eval_v1",
+  "description": "Initial chunk-level retrieval evaluation based on the 58 ingested PostgreSQL documentation chunks.",
+  "top_k": 5,
+  "queries": [
+    {
+      "id": "R001",
+      "query": "What does PostgreSQL ANALYZE do, and how does the query planner use its statistics?",
+      "expected_chunk_ids": [
+        "329705a9-f479-4c75-8361-1851b5b21014"
+      ]
+    },
+    {
+      "id": "R002",
+      "query": "What statistics does PostgreSQL collect about common values and data distribution?",
+      "expected_chunk_ids": [
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b"
+      ]
+    },
+    {
+      "id": "R003",
+      "query": "How can I control the amount of statistics collected for a database column?",
+      "expected_chunk_ids": [
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76"
+      ]
+    },
+    {
+      "id": "R004",
+      "query": "How does PostgreSQL calculate query plan costs and estimate execution work?",
+      "expected_chunk_ids": [
+        "bedaeea0-886d-4d5b-8244-115387880903",
+        "14d9c413-cb45-4df1-a470-e19aa7fd5089"
+      ]
+    },
+    {
+      "id": "R005",
+      "query": "What is the difference between sequential scans and index scans?",
+      "expected_chunk_ids": [
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "da951a32-6b5b-4030-b94c-5fc546b2f382"
+      ]
+    },
+    {
+      "id": "R006",
+      "query": "How can EXPLAIN ANALYZE compare estimated row counts with actual row counts?",
+      "expected_chunk_ids": [
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ]
+    },
+    {
+      "id": "R007",
+      "query": "How do I inspect buffer hits, reads, and other I/O activity in a PostgreSQL execution plan?",
+      "expected_chunk_ids": [
+        "a7354911-4913-4fd7-a836-9b3d310f94f4"
+      ]
+    },
+    {
+      "id": "R008",
+      "query": "Can PostgreSQL combine multiple indexes when a query has several WHERE conditions?",
+      "expected_chunk_ids": [
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe"
+      ]
+    },
+    {
+      "id": "R009",
+      "query": "Why can EXPLAIN ANALYZE produce side effects when executing a data-modifying statement?",
+      "expected_chunk_ids": [
+        "16fad69a-48cc-496d-8a36-bfb36ed432f2"
+      ]
+    },
+    {
+      "id": "R010",
+      "query": "Why might PostgreSQL choose a sequential scan instead of using an available index?",
+      "expected_chunk_ids": [
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba"
+      ]
+    }
+  ]
+}

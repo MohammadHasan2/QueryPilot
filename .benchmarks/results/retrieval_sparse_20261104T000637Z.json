@@ -1,0 +1,1531 @@
+{
+  "aggregate": {
+    "dataset_name": "querypilot_retrieval_eval_v1",
+    "retrieval_mode": "sparse",
+    "timestamp_utc": "2026-11-04T00:08:07.996946+00:00",
+    "query_count": 10,
+    "total_measured_requests": 100,
+    "warmups_per_query": 1,
+    "repeats_per_query": 10,
+    "top_k": 5,
+    "latency_median_ms": 164.923,
+    "latency_p95_ms": 261.785,
+    "mean_recall_at_k": 0.0333,
+    "mean_precision_at_k": 0.02,
+    "mean_mrr": 0.1
+  },
+  "per_query": [
+    {
+      "query_id": "R001",
+      "query": "What does PostgreSQL ANALYZE do, and how does the query planner use its statistics?",
+      "repeats": 10,
+      "latency_median_ms": 214.687,
+      "latency_p95_ms": 264.49,
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R002",
+      "query": "What statistics does PostgreSQL collect about common values and data distribution?",
+      "repeats": 10,
+      "latency_median_ms": 145.649,
+      "latency_p95_ms": 279.339,
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R003",
+      "query": "How can I control the amount of statistics collected for a database column?",
+      "repeats": 10,
+      "latency_median_ms": 162.79,
+      "latency_p95_ms": 220.018,
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R004",
+      "query": "How does PostgreSQL calculate query plan costs and estimate execution work?",
+      "repeats": 10,
+      "latency_median_ms": 210.193,
+      "latency_p95_ms": 231.362,
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R005",
+      "query": "What is the difference between sequential scans and index scans?",
+      "repeats": 10,
+      "latency_median_ms": 159.922,
+      "latency_p95_ms": 242.863,
+      "recall_at_k": 0.3333,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R006",
+      "query": "How can EXPLAIN ANALYZE compare estimated row counts with actual row counts?",
+      "repeats": 10,
+      "latency_median_ms": 170.162,
+      "latency_p95_ms": 263.466,
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R007",
+      "query": "How do I inspect buffer hits, reads, and other I/O activity in a PostgreSQL execution plan?",
+      "repeats": 10,
+      "latency_median_ms": 140.65,
+      "latency_p95_ms": 255.07,
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R008",
+      "query": "Can PostgreSQL combine multiple indexes when a query has several WHERE conditions?",
+      "repeats": 10,
+      "latency_median_ms": 167.537,
+      "latency_p95_ms": 289.62,
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R009",
+      "query": "Why can EXPLAIN ANALYZE produce side effects when executing a data-modifying statement?",
+      "repeats": 10,
+      "latency_median_ms": 164.923,
+      "latency_p95_ms": 256.94,
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R010",
+      "query": "Why might PostgreSQL choose a sequential scan instead of using an available index?",
+      "repeats": 10,
+      "latency_median_ms": 128.67,
+      "latency_p95_ms": 262.983,
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    }
+  ],
+  "raw_measurements": [
+    {
+      "query_id": "R001",
+      "repeat": 1,
+      "retrieval_mode": "sparse",
+      "latency_ms": 252.552,
+      "retrieved_chunk_ids": [
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8"
+      ],
+      "expected_chunk_ids": [
+        "329705a9-f479-4c75-8361-1851b5b21014"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R001",
+      "repeat": 2,
+      "retrieval_mode": "sparse",
+      "latency_ms": 152.377,
+      "retrieved_chunk_ids": [
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8"
+      ],
+      "expected_chunk_ids": [
+        "329705a9-f479-4c75-8361-1851b5b21014"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R001",
+      "repeat": 3,
+      "retrieval_mode": "sparse",
+      "latency_ms": 134.649,
+      "retrieved_chunk_ids": [
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8"
+      ],
+      "expected_chunk_ids": [
+        "329705a9-f479-4c75-8361-1851b5b21014"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R001",
+      "repeat": 4,
+      "retrieval_mode": "sparse",
+      "latency_ms": 261.744,
+      "retrieved_chunk_ids": [
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8"
+      ],
+      "expected_chunk_ids": [
+        "329705a9-f479-4c75-8361-1851b5b21014"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R001",
+      "repeat": 5,
+      "retrieval_mode": "sparse",
+      "latency_ms": 264.49,
+      "retrieved_chunk_ids": [
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8"
+      ],
+      "expected_chunk_ids": [
+        "329705a9-f479-4c75-8361-1851b5b21014"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R001",
+      "repeat": 6,
+      "retrieval_mode": "sparse",
+      "latency_ms": 257.084,
+      "retrieved_chunk_ids": [
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8"
+      ],
+      "expected_chunk_ids": [
+        "329705a9-f479-4c75-8361-1851b5b21014"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R001",
+      "repeat": 7,
+      "retrieval_mode": "sparse",
+      "latency_ms": 206.368,
+      "retrieved_chunk_ids": [
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8"
+      ],
+      "expected_chunk_ids": [
+        "329705a9-f479-4c75-8361-1851b5b21014"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R001",
+      "repeat": 8,
+      "retrieval_mode": "sparse",
+      "latency_ms": 194.103,
+      "retrieved_chunk_ids": [
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8"
+      ],
+      "expected_chunk_ids": [
+        "329705a9-f479-4c75-8361-1851b5b21014"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R001",
+      "repeat": 9,
+      "retrieval_mode": "sparse",
+      "latency_ms": 223.007,
+      "retrieved_chunk_ids": [
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8"
+      ],
+      "expected_chunk_ids": [
+        "329705a9-f479-4c75-8361-1851b5b21014"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R001",
+      "repeat": 10,
+      "retrieval_mode": "sparse",
+      "latency_ms": 186.908,
+      "retrieved_chunk_ids": [
+        "2515074b-ba30-4d94-9acd-c81cec6f37e8"
+      ],
+      "expected_chunk_ids": [
+        "329705a9-f479-4c75-8361-1851b5b21014"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R002",
+      "repeat": 1,
+      "retrieval_mode": "sparse",
+      "latency_ms": 123.863,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R002",
+      "repeat": 2,
+      "retrieval_mode": "sparse",
+      "latency_ms": 136.436,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R002",
+      "repeat": 3,
+      "retrieval_mode": "sparse",
+      "latency_ms": 219.02,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R002",
+      "repeat": 4,
+      "retrieval_mode": "sparse",
+      "latency_ms": 130.091,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R002",
+      "repeat": 5,
+      "retrieval_mode": "sparse",
+      "latency_ms": 279.339,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R002",
+      "repeat": 6,
+      "retrieval_mode": "sparse",
+      "latency_ms": 136.301,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R002",
+      "repeat": 7,
+      "retrieval_mode": "sparse",
+      "latency_ms": 154.862,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R002",
+      "repeat": 8,
+      "retrieval_mode": "sparse",
+      "latency_ms": 234.925,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R002",
+      "repeat": 9,
+      "retrieval_mode": "sparse",
+      "latency_ms": 129.293,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R002",
+      "repeat": 10,
+      "retrieval_mode": "sparse",
+      "latency_ms": 213.745,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "e57d0bd3-0084-4b46-9a17-191d830cc09b"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R003",
+      "repeat": 1,
+      "retrieval_mode": "sparse",
+      "latency_ms": 205.126,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R003",
+      "repeat": 2,
+      "retrieval_mode": "sparse",
+      "latency_ms": 210.479,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R003",
+      "repeat": 3,
+      "retrieval_mode": "sparse",
+      "latency_ms": 114.454,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R003",
+      "repeat": 4,
+      "retrieval_mode": "sparse",
+      "latency_ms": 186.919,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R003",
+      "repeat": 5,
+      "retrieval_mode": "sparse",
+      "latency_ms": 138.661,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R003",
+      "repeat": 6,
+      "retrieval_mode": "sparse",
+      "latency_ms": 220.018,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R003",
+      "repeat": 7,
+      "retrieval_mode": "sparse",
+      "latency_ms": 128.477,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R003",
+      "repeat": 8,
+      "retrieval_mode": "sparse",
+      "latency_ms": 118.024,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R003",
+      "repeat": 9,
+      "retrieval_mode": "sparse",
+      "latency_ms": 129.44,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R003",
+      "repeat": 10,
+      "retrieval_mode": "sparse",
+      "latency_ms": 218.774,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "6183f29c-d758-4c81-9c0b-70b40d0d5e76"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R004",
+      "repeat": 1,
+      "retrieval_mode": "sparse",
+      "latency_ms": 229.546,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "bedaeea0-886d-4d5b-8244-115387880903",
+        "14d9c413-cb45-4df1-a470-e19aa7fd5089"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R004",
+      "repeat": 2,
+      "retrieval_mode": "sparse",
+      "latency_ms": 187.152,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "bedaeea0-886d-4d5b-8244-115387880903",
+        "14d9c413-cb45-4df1-a470-e19aa7fd5089"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R004",
+      "repeat": 3,
+      "retrieval_mode": "sparse",
+      "latency_ms": 220.688,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "bedaeea0-886d-4d5b-8244-115387880903",
+        "14d9c413-cb45-4df1-a470-e19aa7fd5089"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R004",
+      "repeat": 4,
+      "retrieval_mode": "sparse",
+      "latency_ms": 208.884,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "bedaeea0-886d-4d5b-8244-115387880903",
+        "14d9c413-cb45-4df1-a470-e19aa7fd5089"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R004",
+      "repeat": 5,
+      "retrieval_mode": "sparse",
+      "latency_ms": 231.362,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "bedaeea0-886d-4d5b-8244-115387880903",
+        "14d9c413-cb45-4df1-a470-e19aa7fd5089"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R004",
+      "repeat": 6,
+      "retrieval_mode": "sparse",
+      "latency_ms": 217.351,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "bedaeea0-886d-4d5b-8244-115387880903",
+        "14d9c413-cb45-4df1-a470-e19aa7fd5089"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R004",
+      "repeat": 7,
+      "retrieval_mode": "sparse",
+      "latency_ms": 211.501,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "bedaeea0-886d-4d5b-8244-115387880903",
+        "14d9c413-cb45-4df1-a470-e19aa7fd5089"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R004",
+      "repeat": 8,
+      "retrieval_mode": "sparse",
+      "latency_ms": 114.833,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "bedaeea0-886d-4d5b-8244-115387880903",
+        "14d9c413-cb45-4df1-a470-e19aa7fd5089"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R004",
+      "repeat": 9,
+      "retrieval_mode": "sparse",
+      "latency_ms": 182.357,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "bedaeea0-886d-4d5b-8244-115387880903",
+        "14d9c413-cb45-4df1-a470-e19aa7fd5089"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R004",
+      "repeat": 10,
+      "retrieval_mode": "sparse",
+      "latency_ms": 115.857,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "bedaeea0-886d-4d5b-8244-115387880903",
+        "14d9c413-cb45-4df1-a470-e19aa7fd5089"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R005",
+      "repeat": 1,
+      "retrieval_mode": "sparse",
+      "latency_ms": 116.043,
+      "retrieved_chunk_ids": [
+        "da951a32-6b5b-4030-b94c-5fc546b2f382",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88"
+      ],
+      "expected_chunk_ids": [
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "da951a32-6b5b-4030-b94c-5fc546b2f382"
+      ],
+      "recall_at_k": 0.3333333333333333,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R005",
+      "repeat": 2,
+      "retrieval_mode": "sparse",
+      "latency_ms": 229.792,
+      "retrieved_chunk_ids": [
+        "da951a32-6b5b-4030-b94c-5fc546b2f382",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88"
+      ],
+      "expected_chunk_ids": [
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "da951a32-6b5b-4030-b94c-5fc546b2f382"
+      ],
+      "recall_at_k": 0.3333333333333333,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R005",
+      "repeat": 3,
+      "retrieval_mode": "sparse",
+      "latency_ms": 238.001,
+      "retrieved_chunk_ids": [
+        "da951a32-6b5b-4030-b94c-5fc546b2f382",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88"
+      ],
+      "expected_chunk_ids": [
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "da951a32-6b5b-4030-b94c-5fc546b2f382"
+      ],
+      "recall_at_k": 0.3333333333333333,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R005",
+      "repeat": 4,
+      "retrieval_mode": "sparse",
+      "latency_ms": 238.646,
+      "retrieved_chunk_ids": [
+        "da951a32-6b5b-4030-b94c-5fc546b2f382",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88"
+      ],
+      "expected_chunk_ids": [
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "da951a32-6b5b-4030-b94c-5fc546b2f382"
+      ],
+      "recall_at_k": 0.3333333333333333,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R005",
+      "repeat": 5,
+      "retrieval_mode": "sparse",
+      "latency_ms": 189.08,
+      "retrieved_chunk_ids": [
+        "da951a32-6b5b-4030-b94c-5fc546b2f382",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88"
+      ],
+      "expected_chunk_ids": [
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "da951a32-6b5b-4030-b94c-5fc546b2f382"
+      ],
+      "recall_at_k": 0.3333333333333333,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R005",
+      "repeat": 6,
+      "retrieval_mode": "sparse",
+      "latency_ms": 242.863,
+      "retrieved_chunk_ids": [
+        "da951a32-6b5b-4030-b94c-5fc546b2f382",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88"
+      ],
+      "expected_chunk_ids": [
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "da951a32-6b5b-4030-b94c-5fc546b2f382"
+      ],
+      "recall_at_k": 0.3333333333333333,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R005",
+      "repeat": 7,
+      "retrieval_mode": "sparse",
+      "latency_ms": 114.832,
+      "retrieved_chunk_ids": [
+        "da951a32-6b5b-4030-b94c-5fc546b2f382",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88"
+      ],
+      "expected_chunk_ids": [
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "da951a32-6b5b-4030-b94c-5fc546b2f382"
+      ],
+      "recall_at_k": 0.3333333333333333,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R005",
+      "repeat": 8,
+      "retrieval_mode": "sparse",
+      "latency_ms": 130.763,
+      "retrieved_chunk_ids": [
+        "da951a32-6b5b-4030-b94c-5fc546b2f382",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88"
+      ],
+      "expected_chunk_ids": [
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "da951a32-6b5b-4030-b94c-5fc546b2f382"
+      ],
+      "recall_at_k": 0.3333333333333333,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R005",
+      "repeat": 9,
+      "retrieval_mode": "sparse",
+      "latency_ms": 122.04,
+      "retrieved_chunk_ids": [
+        "da951a32-6b5b-4030-b94c-5fc546b2f382",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88"
+      ],
+      "expected_chunk_ids": [
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "da951a32-6b5b-4030-b94c-5fc546b2f382"
+      ],
+      "recall_at_k": 0.3333333333333333,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R005",
+      "repeat": 10,
+      "retrieval_mode": "sparse",
+      "latency_ms": 120.765,
+      "retrieved_chunk_ids": [
+        "da951a32-6b5b-4030-b94c-5fc546b2f382",
+        "2d7e9a63-6f23-4a6a-b090-2e48742f2c88"
+      ],
+      "expected_chunk_ids": [
+        "af8ca373-c6c4-4828-8138-5ca067ce3cec",
+        "6858afcd-95b6-4a99-b28a-fc6b9b265952",
+        "da951a32-6b5b-4030-b94c-5fc546b2f382"
+      ],
+      "recall_at_k": 0.3333333333333333,
+      "precision_at_k": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "query_id": "R006",
+      "repeat": 1,
+      "retrieval_mode": "sparse",
+      "latency_ms": 161.431,
+      "retrieved_chunk_ids": [
+        "66d0ccb7-ed96-4c80-a24a-0ded63a9411a"
+      ],
+      "expected_chunk_ids": [
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R006",
+      "repeat": 2,
+      "retrieval_mode": "sparse",
+      "latency_ms": 157.638,
+      "retrieved_chunk_ids": [
+        "66d0ccb7-ed96-4c80-a24a-0ded63a9411a"
+      ],
+      "expected_chunk_ids": [
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R006",
+      "repeat": 3,
+      "retrieval_mode": "sparse",
+      "latency_ms": 244.946,
+      "retrieved_chunk_ids": [
+        "66d0ccb7-ed96-4c80-a24a-0ded63a9411a"
+      ],
+      "expected_chunk_ids": [
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R006",
+      "repeat": 4,
+      "retrieval_mode": "sparse",
+      "latency_ms": 139.565,
+      "retrieved_chunk_ids": [
+        "66d0ccb7-ed96-4c80-a24a-0ded63a9411a"
+      ],
+      "expected_chunk_ids": [
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R006",
+      "repeat": 5,
+      "retrieval_mode": "sparse",
+      "latency_ms": 232.758,
+      "retrieved_chunk_ids": [
+        "66d0ccb7-ed96-4c80-a24a-0ded63a9411a"
+      ],
+      "expected_chunk_ids": [
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R006",
+      "repeat": 6,
+      "retrieval_mode": "sparse",
+      "latency_ms": 234.407,
+      "retrieved_chunk_ids": [
+        "66d0ccb7-ed96-4c80-a24a-0ded63a9411a"
+      ],
+      "expected_chunk_ids": [
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R006",
+      "repeat": 7,
+      "retrieval_mode": "sparse",
+      "latency_ms": 123.38,
+      "retrieved_chunk_ids": [
+        "66d0ccb7-ed96-4c80-a24a-0ded63a9411a"
+      ],
+      "expected_chunk_ids": [
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R006",
+      "repeat": 8,
+      "retrieval_mode": "sparse",
+      "latency_ms": 263.466,
+      "retrieved_chunk_ids": [
+        "66d0ccb7-ed96-4c80-a24a-0ded63a9411a"
+      ],
+      "expected_chunk_ids": [
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R006",
+      "repeat": 9,
+      "retrieval_mode": "sparse",
+      "latency_ms": 178.894,
+      "retrieved_chunk_ids": [
+        "66d0ccb7-ed96-4c80-a24a-0ded63a9411a"
+      ],
+      "expected_chunk_ids": [
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R006",
+      "repeat": 10,
+      "retrieval_mode": "sparse",
+      "latency_ms": 133.913,
+      "retrieved_chunk_ids": [
+        "66d0ccb7-ed96-4c80-a24a-0ded63a9411a"
+      ],
+      "expected_chunk_ids": [
+        "e13d8049-dec0-469a-96dc-8f23bba7cdaa",
+        "693a2807-3bb2-45dc-89a2-d93763dd15f4"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R007",
+      "repeat": 1,
+      "retrieval_mode": "sparse",
+      "latency_ms": 158.745,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "a7354911-4913-4fd7-a836-9b3d310f94f4"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R007",
+      "repeat": 2,
+      "retrieval_mode": "sparse",
+      "latency_ms": 123.282,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "a7354911-4913-4fd7-a836-9b3d310f94f4"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R007",
+      "repeat": 3,
+      "retrieval_mode": "sparse",
+      "latency_ms": 255.07,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "a7354911-4913-4fd7-a836-9b3d310f94f4"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R007",
+      "repeat": 4,
+      "retrieval_mode": "sparse",
+      "latency_ms": 118.421,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "a7354911-4913-4fd7-a836-9b3d310f94f4"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R007",
+      "repeat": 5,
+      "retrieval_mode": "sparse",
+      "latency_ms": 185.33,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "a7354911-4913-4fd7-a836-9b3d310f94f4"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R007",
+      "repeat": 6,
+      "retrieval_mode": "sparse",
+      "latency_ms": 142.535,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "a7354911-4913-4fd7-a836-9b3d310f94f4"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R007",
+      "repeat": 7,
+      "retrieval_mode": "sparse",
+      "latency_ms": 122.676,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "a7354911-4913-4fd7-a836-9b3d310f94f4"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R007",
+      "repeat": 8,
+      "retrieval_mode": "sparse",
+      "latency_ms": 201.207,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "a7354911-4913-4fd7-a836-9b3d310f94f4"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R007",
+      "repeat": 9,
+      "retrieval_mode": "sparse",
+      "latency_ms": 123.399,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "a7354911-4913-4fd7-a836-9b3d310f94f4"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R007",
+      "repeat": 10,
+      "retrieval_mode": "sparse",
+      "latency_ms": 138.764,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "a7354911-4913-4fd7-a836-9b3d310f94f4"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R008",
+      "repeat": 1,
+      "retrieval_mode": "sparse",
+      "latency_ms": 206.702,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R008",
+      "repeat": 2,
+      "retrieval_mode": "sparse",
+      "latency_ms": 261.785,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R008",
+      "repeat": 3,
+      "retrieval_mode": "sparse",
+      "latency_ms": 173.209,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R008",
+      "repeat": 4,
+      "retrieval_mode": "sparse",
+      "latency_ms": 289.62,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R008",
+      "repeat": 5,
+      "retrieval_mode": "sparse",
+      "latency_ms": 122.742,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R008",
+      "repeat": 6,
+      "retrieval_mode": "sparse",
+      "latency_ms": 145.524,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R008",
+      "repeat": 7,
+      "retrieval_mode": "sparse",
+      "latency_ms": 161.866,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R008",
+      "repeat": 8,
+      "retrieval_mode": "sparse",
+      "latency_ms": 258.219,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R008",
+      "repeat": 9,
+      "retrieval_mode": "sparse",
+      "latency_ms": 123.527,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R008",
+      "repeat": 10,
+      "retrieval_mode": "sparse",
+      "latency_ms": 132.633,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "50ec7cba-8670-40f6-bfa6-d413b05c4dbe"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R009",
+      "repeat": 1,
+      "retrieval_mode": "sparse",
+      "latency_ms": 169.389,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "16fad69a-48cc-496d-8a36-bfb36ed432f2"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R009",
+      "repeat": 2,
+      "retrieval_mode": "sparse",
+      "latency_ms": 113.027,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "16fad69a-48cc-496d-8a36-bfb36ed432f2"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R009",
+      "repeat": 3,
+      "retrieval_mode": "sparse",
+      "latency_ms": 127.633,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "16fad69a-48cc-496d-8a36-bfb36ed432f2"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R009",
+      "repeat": 4,
+      "retrieval_mode": "sparse",
+      "latency_ms": 149.465,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "16fad69a-48cc-496d-8a36-bfb36ed432f2"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R009",
+      "repeat": 5,
+      "retrieval_mode": "sparse",
+      "latency_ms": 119.197,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "16fad69a-48cc-496d-8a36-bfb36ed432f2"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R009",
+      "repeat": 6,
+      "retrieval_mode": "sparse",
+      "latency_ms": 256.94,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "16fad69a-48cc-496d-8a36-bfb36ed432f2"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R009",
+      "repeat": 7,
+      "retrieval_mode": "sparse",
+      "latency_ms": 162.489,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "16fad69a-48cc-496d-8a36-bfb36ed432f2"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R009",
+      "repeat": 8,
+      "retrieval_mode": "sparse",
+      "latency_ms": 167.357,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "16fad69a-48cc-496d-8a36-bfb36ed432f2"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R009",
+      "repeat": 9,
+      "retrieval_mode": "sparse",
+      "latency_ms": 206.359,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "16fad69a-48cc-496d-8a36-bfb36ed432f2"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R009",
+      "repeat": 10,
+      "retrieval_mode": "sparse",
+      "latency_ms": 195.148,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "16fad69a-48cc-496d-8a36-bfb36ed432f2"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R010",
+      "repeat": 1,
+      "retrieval_mode": "sparse",
+      "latency_ms": 126.273,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R010",
+      "repeat": 2,
+      "retrieval_mode": "sparse",
+      "latency_ms": 124.629,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R010",
+      "repeat": 3,
+      "retrieval_mode": "sparse",
+      "latency_ms": 129.854,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R010",
+      "repeat": 4,
+      "retrieval_mode": "sparse",
+      "latency_ms": 123.491,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R010",
+      "repeat": 5,
+      "retrieval_mode": "sparse",
+      "latency_ms": 262.983,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R010",
+      "repeat": 6,
+      "retrieval_mode": "sparse",
+      "latency_ms": 127.485,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R010",
+      "repeat": 7,
+      "retrieval_mode": "sparse",
+      "latency_ms": 137.517,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R010",
+      "repeat": 8,
+      "retrieval_mode": "sparse",
+      "latency_ms": 149.739,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R010",
+      "repeat": 9,
+      "retrieval_mode": "sparse",
+      "latency_ms": 126.116,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    },
+    {
+      "query_id": "R010",
+      "repeat": 10,
+      "retrieval_mode": "sparse",
+      "latency_ms": 191.408,
+      "retrieved_chunk_ids": [],
+      "expected_chunk_ids": [
+        "804e4b21-18ff-47e5-a306-383ae24cc0ba"
+      ],
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr": 0.0
+    }
+  ]
+}

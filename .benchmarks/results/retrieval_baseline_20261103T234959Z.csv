@@ -1,0 +1,11 @@
+query_id,query,repeats,latency_median_ms,latency_p95_ms,recall_at_k,precision_at_k,mrr
+R001,"What does PostgreSQL ANALYZE do, and how does the query planner use its statistics?",10,365.943,593.965,1.0,0.2,0.5
+R002,What statistics does PostgreSQL collect about common values and data distribution?,10,371.879,490.645,1.0,0.2,0.3333
+R003,How can I control the amount of statistics collected for a database column?,10,318.62,506.723,1.0,0.2,0.5
+R004,How does PostgreSQL calculate query plan costs and estimate execution work?,10,322.823,438.02,0.5,0.2,0.5
+R005,What is the difference between sequential scans and index scans?,10,385.484,827.236,0.0,0.0,0.0
+R006,How can EXPLAIN ANALYZE compare estimated row counts with actual row counts?,10,312.525,493.72,0.5,0.2,0.25
+R007,"How do I inspect buffer hits, reads, and other I/O activity in a PostgreSQL execution plan?",10,243.109,440.368,1.0,0.2,1.0
+R008,Can PostgreSQL combine multiple indexes when a query has several WHERE conditions?,10,296.759,558.668,1.0,0.2,1.0
+R009,Why can EXPLAIN ANALYZE produce side effects when executing a data-modifying statement?,10,264.753,358.19,0.5,0.2,1.0
+R010,Why might PostgreSQL choose a sequential scan instead of using an available index?,10,285.993,381.114,0.5,0.2,1.0

@@ -1,0 +1,16 @@
+{
+  "name": "querypilot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "python -m pytest services/api/tests -q"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "supabase": "^2.122.0"
+  }
+}
