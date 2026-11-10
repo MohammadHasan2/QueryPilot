@@ -1,4 +1,8 @@
 import { useState, type FormEvent, type ReactNode } from 'react'
+
+// In production, set VITE_API_BASE_URL to the deployed FastAPI service URL.
+// In local development, an empty value keeps requests relative so the Vite proxy can handle them.
+const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL ?? '').trim().replace(/\/+$/, '')
 import {
   Activity,
   AlertCircle,
@@ -140,7 +144,13 @@ function App() {
     setResult(null)
 
     try {
-      const response = await fetch('/api/investigate', {
+      if (import.meta.env.PROD && !API_BASE_URL) {
+        throw new Error(
+          'The API URL is not configured. Set VITE_API_BASE_URL in your Cloudflare Pages production environment variables, then redeploy.',
+        )
+      }
+
+      const response = await fetch(`${API_BASE_URL}/api/investigate`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -273,7 +283,7 @@ function App() {
                       onChange={(event) => setSql(event.target.value)}
                       spellCheck={false}
                       aria-label="SQL query editor"
-                      placeholder="Write a read-only SELECT query..."
+                      placeholder="Write a PostgreSQL statement to analyze..."
                       className="min-h-[280px] w-full resize-y bg-transparent p-4 font-mono text-[13px] leading-6 text-emerald-200 outline-none placeholder:text-slate-700"
                     />
                   </div>
@@ -321,7 +331,7 @@ function App() {
                   <div className="min-w-0 flex-1">
                     <div className="text-sm font-medium text-white">SQL validation</div>
                     <p className="mt-1 text-xs leading-5 text-slate-500">
-                      Read-only SELECT validation before execution.
+                      SQL statement validation before static analysis.
                     </p>
                   </div>
                   <StatusPill tone={result ? 'green' : 'neutral'}>
@@ -359,7 +369,7 @@ function App() {
                     </p>
                   </div>
                   <StatusPill
-                    tone={result?.retrieval_status === 'success' || result?.retrieval_status === 'completed'
+                    tone={result?.retrieval_status === 'ok' || result?.retrieval_status === 'success' || result?.retrieval_status === 'completed'
                       ? 'green'
                       : 'neutral'}
                   >
@@ -392,7 +402,7 @@ function App() {
                 </div>
                 <p className="mt-2 text-xs leading-5 text-slate-400">
                   SQL analysis is independent of AI availability. If the AI
-                  budget is exhausted, execution-plan results remain available.
+                  budget is exhausted, static analysis results remain available.
                 </p>
               </div>
             </div>
@@ -441,8 +451,8 @@ function App() {
   />
   <MetricCard
     label="Static analysis"
-    value="Not generated"
-    detail="No SQL execution"
+    value={result.analysis ? 'Available' : 'Pending'}
+    detail="Static analysis only"
     icon={Gauge}
   />
   <MetricCard
