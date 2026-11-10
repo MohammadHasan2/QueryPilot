@@ -5,6 +5,8 @@ from app.investigation import investigate
 from app.optimization_rules import analyze_sql_patterns
 from app.sql_safety import classify_sql
 
+from fastapi.middleware.cors import CORSMiddleware
+
 
 app = FastAPI(
     title="QueryPilot API",
@@ -15,7 +17,12 @@ app = FastAPI(
     ),
 )
 
-
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["https://querypilot.pages.dev"],
+    allow_methods=["GET", "POST"],
+    allow_headers=["Content-Type"],
+)
 class SQLValidationRequest(BaseModel):
     sql: str = Field(min_length=1, max_length=20_000)
 

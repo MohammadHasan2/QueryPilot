@@ -203,11 +203,11 @@ function App() {
           <div className="flex items-center gap-2">
             <StatusPill tone="green">
               <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
-              Local workspace
+               Workspace
             </StatusPill>
             <div className="hidden items-center gap-2 border-l border-white/10 pl-4 text-xs text-slate-500 sm:flex">
               <ShieldCheck size={15} />
-              Read-only SQL
+              SQL
             </div>
           </div>
         </div>
